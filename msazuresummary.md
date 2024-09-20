@@ -17,4 +17,5 @@ It prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied.
 
+![image](https://github.com/user-attachments/assets/fdeac407-c397-4fe0-be5c-22be71a0847e)
 
