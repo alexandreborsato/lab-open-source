@@ -1,5 +1,10 @@
 # MS Azure Summary
 
+### Resource Groups
+It is used to group resources as a project/ptogram or architecture, environment. Here you can create your cloud resources.
+The reources are VMs, DBs, virtual networks...
+Within the Resource Groups there are some features and configurations to be exploired such as Activity Log, IAM (permissions), Tags, Settings (Security, Policies, Locks), Cost Management, Monitoring, Automation....
+
 ### Microsoft Purview
 It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
 
