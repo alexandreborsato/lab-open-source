@@ -5,6 +5,22 @@ It is used to group resources as a project/ptogram or architecture, environment.
 The reources are VMs, DBs, virtual networks...
 Within the Resource Groups there are some features and configurations to be exploired such as Activity Log, IAM (permissions), Tags, Settings (Security, Policies, Locks), Cost Management, Monitoring, Automation....
 
+## Containers and VMs are isolated from host hardware
+
+## Network peering - used to stablish communication between virtual networks (VNtes)
+
+### Express Route
+It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
+
+### MS Azure App Services
+It is used to Create, build, deploy, and manage powerful web, mobile, and API apps for employees or customers using a single back-end. Build standards-based web apps and APIs using .NET, Java, Node.js, PHP, and Python
+
+### MS Azure Function Services
+It lets you group functions as a logical unit for easier management, deployment and sharing of resources. Functions lets you execute your code in a serverless environment without having to first create a VM or publish a web application.
+
+### Azure Virtual Desktop
+Kind of workspace / virtual desktop - Easily scale your VM deployment. Create host pools to easily manage assignments, application groups, and settings for your entire organization
+
 ### Microsoft Purview
 It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
 
