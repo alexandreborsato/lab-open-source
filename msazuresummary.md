@@ -5,12 +5,16 @@ It is used to group resources as a project/ptogram or architecture, environment.
 The reources are VMs, DBs, virtual networks...
 Within the Resource Groups there are some features and configurations to be exploired such as Activity Log, IAM (permissions), Tags, Settings (Security, Policies, Locks), Cost Management, Monitoring, Automation....
 
-## Containers and VMs are isolated from host hardware
+### Containers and VMs are isolated from host hardware
 
-## Network peering - used to stablish communication between virtual networks (VNtes)
+### Network peering - used to stablish communication between virtual networks (VNtes)
 
 ### Express Route
 It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
+
+## Storage Services
+
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/88794d29-a7b9-4ebe-af2e-1d032218d8e7">
 
 ### MS Azure App Services
 It is used to Create, build, deploy, and manage powerful web, mobile, and API apps for employees or customers using a single back-end. Build standards-based web apps and APIs using .NET, Java, Node.js, PHP, and Python
