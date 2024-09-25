@@ -30,9 +30,12 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
  - AzCopy is a command-line utility designed for copying data to and from Microsoft Azure Blob, File, and Table storage. With AzCopy, you can migrate your data from the file system to Azure Storage, or vice versa, using simple commands and with optimal performance.
 
-$\color{orange}{\text{Orange Text Here}}$
-
  - MaC ::  it worked using ./azcopy - such as...:  ./azcopy cp /mysourcepath/ "https://my URL to access the container SAS" --recursive=true
+
+ - Azure Storage Explorer - Upload, download, and manage Azure Storage blobs, files, queues, and tables, as well as Azure Data Lake Storage entities and Azure managed disks. Configure storage permissions and access controls, tiers, and rules.
+        >> Download it and use it, it is really a easier way to friendly work with you cloud storage / disks / shared files / ...
+
+$\color{orange}{\text{         ..... Orange Text Here ........ }}$
 
 ### MS Azure App Services
 It is used to Create, build, deploy, and manage powerful web, mobile, and API apps for employees or customers using a single back-end. Build standards-based web apps and APIs using .NET, Java, Node.js, PHP, and Python
