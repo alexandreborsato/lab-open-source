@@ -16,6 +16,20 @@ It is the same as AWS Direct Connect - connect customers local enterprise networ
 
 <img width="695" alt="image" src="https://github.com/user-attachments/assets/88794d29-a7b9-4ebe-af2e-1d032218d8e7">
 
+### Azure Storage
+ - Locally redundant storage (LRS) - 11 9´s - 3 copies in the same DC
+ - Zone-redundant storage (ZRS) - 12 9´s - 3 copies in 3 differente AZ´s (DC´s)
+ - Geo-redundant storage (GRS) copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
+ - Geo-zone-redundant storage (GZRS) copies your data synchronously across three Azure availability zones in the primary region using ZRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
+
+block blob accounts: object storage 0 kind of S3
+
+Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy 
+
+ - Azure Files: it is a fully managed file shares in the cloud that are accessible via the industry-standard SMB and NFS protocols. Azure Files shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Azure Files shares can also be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
+
+ - AzCopy is a command-line utility designed for copying data to and from Microsoft Azure Blob, File, and Table storage. With AzCopy, you can migrate your data from the file system to Azure Storage, or vice versa, using simple commands and with optimal performance.
+
 ### MS Azure App Services
 It is used to Create, build, deploy, and manage powerful web, mobile, and API apps for employees or customers using a single back-end. Build standards-based web apps and APIs using .NET, Java, Node.js, PHP, and Python
 
