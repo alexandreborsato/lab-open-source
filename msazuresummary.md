@@ -46,6 +46,8 @@ It lets you group functions as a logical unit for easier management, deployment 
 ### Azure Virtual Desktop
 Kind of workspace / virtual desktop - Easily scale your VM deployment. Create host pools to easily manage assignments, application groups, and settings for your entire organization
 
+### MS Entra ID - It is the old MS AD - used to user and resources authentication
+
 ### Microsoft Purview
 It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
 
