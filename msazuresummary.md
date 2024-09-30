@@ -71,9 +71,10 @@ It is a family of data governance, risk, and compliance solutions that helps you
 
 With Microsoft Purview, you can stay up-to-date on your data landscape thanks to:
 
-Automated data discovery
-Sensitive data classification
-End-to-end data lineage
+ - Automated data discovery
+ - Sensitive data classification
+ - End-to-end data lineage*
+   (*) Data lineage includes the data origin, what happens to it, and where it moves over time. Data lineage provides visibility and simplifies tracing errors back to the root cause in a data analytics process
 
 ### Azure Policy
 It is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards
