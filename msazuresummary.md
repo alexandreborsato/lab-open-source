@@ -30,10 +30,14 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
  - AzCopy is a command-line utility designed for copying data to and from Microsoft Azure Blob, File, and Table storage. With AzCopy, you can migrate your data from the file system to Azure Storage, or vice versa, using simple commands and with optimal performance.
 
- - MaC ::  it worked using ./azcopy - such as...:  ./azcopy cp /mysourcepath/ "https://my URL to access the container SAS" --recursive=true
+ - On MaC ::  it worked using ./azcopy - such as...:  ./azcopy cp /mysourcepath/ "https://my URL to access the container SAS" --recursive=true
 
  - Azure Storage Explorer - Upload, download, and manage Azure Storage blobs, files, queues, and tables, as well as Azure Data Lake Storage entities and Azure managed disks. Configure storage permissions and access controls, tiers, and rules.
         >> Download it and use it, it is really a easier way to friendly work with you cloud storage / disks / shared files / ...
+
+### Azure Arc:   Secure, monitor, and govern infrastructure across your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views
+
+### ARM - Azure Resource Manager - json based to create and manage resources - infrastructure as a code.
 
 $\color{orange}{\text{         ..... Orange Text Here ........ }}$
 
