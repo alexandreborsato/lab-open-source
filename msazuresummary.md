@@ -79,6 +79,8 @@ With Microsoft Purview, you can stay up-to-date on your data landscape thanks to
 ### Azure Policy
 It is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards
 
+### MS Services Trust Portal::  https://servicetrust.microsoft.com/
+
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
 
