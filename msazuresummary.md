@@ -45,6 +45,7 @@ https://github.com/alexandreborsato/lab-open-source.git/desafio2.py
 https://github.com/alexandreborsato/lab-open-source.git/desafio3.py
 
 ### Azure TCO - Total Cost of Ownership: https://azure.microsoft.com/en-us/pricing/tco/calculator/
+### Azure pricing calculator:  https://azure.microsoft.com/en-us/pricing/calculator/
 
 ### MS Azure App Services
 It is used to Create, build, deploy, and manage powerful web, mobile, and API apps for employees or customers using a single back-end. Build standards-based web apps and APIs using .NET, Java, Node.js, PHP, and Python
