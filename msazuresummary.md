@@ -38,7 +38,7 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 ### Azure Arc:   Secure, monitor, and govern infrastructure across your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views
 
 ### ARM - Azure Resource Manager - json based to create and manage resources - infrastructure as a code.
-    https://azure.microsoft.com/pt-br/get-started/azure-portal/resource-manager 
+[![Review ARM Official Documentation](https://azure.microsoft.com/pt-br/get-started/azure-portal/resource-manager)] 
 
 $\color{orange}{\text{         ..... Orange Text Here ........ }}$
 
