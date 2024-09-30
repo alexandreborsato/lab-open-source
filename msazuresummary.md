@@ -69,6 +69,7 @@ Kind of workspace / virtual desktop - Easily scale your VM deployment. Create ho
 
 <img width="455" alt="image" src="https://github.com/user-attachments/assets/d7dd32b5-290c-412f-826f-57ad56ef66a0">
 
+### Azure CLI::  https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest 
 
 ### Microsoft Purview
 It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
