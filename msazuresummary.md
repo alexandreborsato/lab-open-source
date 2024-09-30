@@ -39,7 +39,6 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
 ### ARM - Azure Resource Manager - json based to create and manage resources - infrastructure as a code.
 [Review ARM Official Documentation](https://azure.microsoft.com/en-us/get-started/azure-portal/resource-manager/)
-<img width="146" alt="image" src="https://github.com/user-attachments/assets/47d808e6-c8f7-4de0-baf4-bc8b3f1f3646">
 
 $\color{orange}{\text{         ..... Orange Text Here ........ }}$
 
