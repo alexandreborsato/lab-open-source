@@ -1,3 +1,5 @@
+# Recebe a Entrada do usuário e armazena na variável "entrada"
+
 entrada = input(("Enter the Azure component: "))
 
 # Função responsável por receber um componente e retornar sua respectiva descrição.
