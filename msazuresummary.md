@@ -87,6 +87,15 @@ It is a service in Azure that enables you to create, assign, and manage policies
 
 ### MS Services Trust Portal::  https://servicetrust.microsoft.com/
 
+### Azure Advisor: kind of recomendation center / insights to address issues with:
+ - Reliability
+ - Security
+ - Performance
+ - Costs
+ - Operational Excellence
+
+### Azure Monitor - It monitors and provide insights about resources such as VMs, Storages, apps, ... it is possible to create alerts, review metrics, check for services health...
+
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
 
