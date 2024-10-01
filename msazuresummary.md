@@ -96,6 +96,8 @@ It is a service in Azure that enables you to create, assign, and manage policies
 
 ### Azure Monitor - It monitors and provide insights about resources such as VMs, Storages, apps, ... it is possible to create alerts, review metrics, check for services health...
 
+### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
+
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
 
