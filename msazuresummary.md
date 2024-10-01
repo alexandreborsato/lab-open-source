@@ -96,6 +96,8 @@ It is a service in Azure that enables you to create, assign, and manage policies
 
 ### Azure Monitor - It monitors and provide insights about resources such as VMs, Storages, apps, ... it is possible to create alerts, review metrics, check for services health...
 
+ - Health Advisories: use it to proactively review and act on to avoid service interruptions, such as service retirements and breaking changes
+
 ### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
 
 ### Azure resource lock
