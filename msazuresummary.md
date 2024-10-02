@@ -7,6 +7,9 @@ Within the Resource Groups there are some features and configurations to be expl
  - A resource group can connect to resources in other resource groups. This scenario is common when two different resources are related but don't share the same lifecycle or access pattern. For example, you can have a web app that connects to a database in a different resource group.
  - When you delete a resource group, all resources in the resource group are also deleted.
  - The resources in a resource group can be located in different regions than the resource group. When you create a resource group, you need to provide a location for that resource group.
+ - An Azure resource inherits locks from its resource group when you apply a lock at a parent scope, all resources within that scope inherit the same lock. Even resources you add later inherit the lock from the parent.
+ - Resources don't inherit the tags you apply to a resource group or a subscription
+ - All resources within a resource group will inherit the permissions set in the former
 
 ### Containers and VMs are isolated from host hardware
 
@@ -117,7 +120,7 @@ It is a service in Azure that enables you to create, assign, and manage policies
  - Health Advisories: use it to proactively review and act on to avoid service interruptions, such as service retirements and breaking changes
     >> Health advisories are issues that require that you take proactive action to avoid service interruptions, such as service retirements and breaking changes. Service issues are problems such as outages that require immediate actions
 
-### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates. Use it to review the root cause analysis (RCA) report for a service outage that occurred.
+### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates. Use it to review the root cause analysis (RCA) report for a service outage that occurred. Configurable cloud alerts notify you about active and upcoming service issues
 
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
