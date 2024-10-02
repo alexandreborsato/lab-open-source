@@ -34,10 +34,12 @@ It is the same as AWS Direct Connect - connect customers local enterprise networ
  - Geo-redundant storage (GRS) copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
  - Geo-zone-redundant storage (GZRS) copies your data synchronously across three Azure availability zones in the primary region using ZRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
 
- - Blob Storage - block blob accounts: object storage 0 kind of S3
-    - >> Common use cases for Azure Blob storage:
-      >> serving images or documents directly to a browser;
-      >> storing data for backup and restore
+ - Blob Storage - block blob accounts: object storage :: kind of S3
+      - Common use cases for Azure Blob storage:
+      - serving images or documents directly to a browser;
+      - storing data for backup and restore
+
+The Archive storage tier stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data. The Hot storage tier is optimized for storing data that is accessed frequently. Data in the Cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data.
 
 Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy 
 
@@ -52,7 +54,9 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
 ### Azure Arc:   Secure, monitor, and govern infrastructure across your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views
 
-### ARM - Azure Resource Manager - json based to create and manage resources - infrastructure as a code.
+### ARM - Azure Resource Manager
+It is a management layer that accepts requests from any Azure tool or API and enables you to create, update, and delete resources in an Azure account. It is json based to create and manage resources - infrastructure as a code.
+
 [Review ARM Official Documentation](https://azure.microsoft.com/en-us/get-started/azure-portal/resource-manager/)
 
 $\color{orange}{\text{         ..... Orange Text Here ........ }}$
@@ -73,6 +77,9 @@ It is used to Create, build, deploy, and manage powerful web, mobile, and API ap
 ### MS Azure Function Services
 It lets you group functions as a logical unit for easier management, deployment and sharing of resources. Functions lets you execute your code in a serverless environment without having to first create a VM or publish a web application.
 
+### Azure Virtual Machines (VMs):
+Virtual machine workloads that are used only during certain periods, but you run them every hour of every day, then you are wasting money. These virtual machines are great candidates to deallocate when not in use and start back when required to save compute costs while the virtual machines are deallocated.
+
 ### Azure Virtual Desktop
 Kind of workspace / virtual desktop - Easily scale your VM deployment. Create host pools to easily manage assignments, application groups, and settings for your entire organization
 
@@ -84,6 +91,10 @@ Kind of workspace / virtual desktop - Easily scale your VM deployment. Create ho
  - Users are permanently deleted after 30 days they were deleted
 
 <img width="455" alt="image" src="https://github.com/user-attachments/assets/d7dd32b5-290c-412f-826f-57ad56ef66a0">
+
+### Management groups:
+It can be used in environments that have multiple subscriptions to streamline the application of governance conditions
+Use it to manage access, policies, and compliance across multiple subscriptions.
 
 ### Azure CLI::  https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest 
 
@@ -122,9 +133,17 @@ It is a service in Azure that enables you to create, assign, and manage policies
 
 ### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates. Use it to review the root cause analysis (RCA) report for a service outage that occurred. Configurable cloud alerts notify you about active and upcoming service issues
 
+### Application Insights is a feature of Azure Monitor that allows you to monitor running applications, automatically detect performance anomalies, and use built-in analytics tools to see what users do on an app
+
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied. In the case of lock inherited from a resource group, you can move a specific resource to another resource group that doesn´t have a lock and so the lock will not apply anylonger. However, if the lock is set directly to a specific resource, even when moving to a another resource group, the lock will be moved alongside with the resource. Warning:::  it the lock is a read-only, it is not possible to move the resource at all.
+
+### Support Plans:
+
+<img width="994" alt="image" src="https://github.com/user-attachments/assets/346a393c-7ae8-4fb9-8ce9-af3c32cd0498">
+
+
 
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/2920ee53-3169-42b5-b267-bb4c95ac5a98">
