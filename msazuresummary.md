@@ -4,10 +4,19 @@
 It is used to group resources as a project/ptogram or architecture, environment. Here you can create your cloud resources.
 The reources are VMs, DBs, virtual networks...
 Within the Resource Groups there are some features and configurations to be exploired such as Activity Log, IAM (permissions), Tags, Settings (Security, Policies, Locks), Cost Management, Monitoring, Automation....
+ - A resource group can connect to resources in other resource groups. This scenario is common when two different resources are related but don't share the same lifecycle or access pattern. For example, you can have a web app that connects to a database in a different resource group.
+ - When you delete a resource group, all resources in the resource group are also deleted.
+ - The resources in a resource group can be located in different regions than the resource group. When you create a resource group, you need to provide a location for that resource group.
 
 ### Containers and VMs are isolated from host hardware
 
 ### Network peering - used to stablish communication between virtual networks (VNtes)
+
+### Region Pairs:  allows you to replicate resources across a geography to ensure business continuity during a natural disaster at the primary site
+
+### Peering:  allow resources on two different Azure virtual networks to communicate with each other
+
+### Service Endipoints:  use it to connect Azure resources, such as Azure SQL databases, to an Azure virtual network
 
 ### Express Route
 It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
@@ -22,7 +31,10 @@ It is the same as AWS Direct Connect - connect customers local enterprise networ
  - Geo-redundant storage (GRS) copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
  - Geo-zone-redundant storage (GZRS) copies your data synchronously across three Azure availability zones in the primary region using ZRS. It then copies your data asynchronously to a single physical location in the secondary region. Within the secondary region, your data is copied synchronously three times using LRS. 16 9´s
 
-block blob accounts: object storage 0 kind of S3
+ - Blob Storage - block blob accounts: object storage 0 kind of S3
+    - >> Common use cases for Azure Blob storage:
+      >> serving images or documents directly to a browser;
+      >> storing data for backup and restore
 
 Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy 
 
@@ -81,7 +93,12 @@ With Microsoft Purview, you can stay up-to-date on your data landscape thanks to
  - Sensitive data classification
  - End-to-end data lineage*
    (*) Data lineage includes the data origin, what happens to it, and where it moves over time. Data lineage provides visibility and simplifies tracing errors back to the root cause in a data analytics process
+ - Data Police is the feature in the Microsoft Purview governance portal used to manage access to data sources and datasets
 
+### Security:
+   Conditional Access is a feature that Microsoft Entra uses to allow or deny access to resources based on identity signals, such as the device being used. SSO enables a user to sign in one time and use that credential to access multiple resources and applications from different providers. MFA is a process whereby a user is prompted during the sign-in process for an additional form of identification. Hybrid identity solutions create a common user identity for authentication and authorization to all resources, regardless of location.
+   Azure RBAC role is applied to a scope, which is a resource or set of resources that the access applies to. Resource locks prevent the accidental change or deletion of a resource. Resource tags are used to locate and act on resources associated with specific workloads, environments, business units, and owners. Policies enforce different rules across resource configurations so that the configurations stay compliant with corporate standards.
+   
 ### Azure Policy
 It is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards
 
@@ -93,12 +110,14 @@ It is a service in Azure that enables you to create, assign, and manage policies
  - Performance
  - Costs
  - Operational Excellence
+ -   >> for example, it sends notifications when there are new recommendations for reducing Azure costs
 
 ### Azure Monitor - It monitors and provide insights about resources such as VMs, Storages, apps, ... it is possible to create alerts, review metrics, check for services health...
 
  - Health Advisories: use it to proactively review and act on to avoid service interruptions, such as service retirements and breaking changes
+    >> Health advisories are issues that require that you take proactive action to avoid service interruptions, such as service retirements and breaking changes. Service issues are problems such as outages that require immediate actions
 
-### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates.
+### Azure Service Health - it notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime. Configure customizable cloud alerts and use your personalized dashboard to analyze health issues, monitor the impact to your cloud resources, get guidance and support, and share details and updates. Use it to review the root cause analysis (RCA) report for a service outage that occurred.
 
 ### Azure resource lock
 It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
