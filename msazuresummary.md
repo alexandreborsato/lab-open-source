@@ -58,6 +58,26 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
  - Azure Storage Explorer - Upload, download, and manage Azure Storage blobs, files, queues, and tables, as well as Azure Data Lake Storage entities and Azure managed disks. Configure storage permissions and access controls, tiers, and rules.
      - Download it and use it, it is really a easier way to friendly work with you cloud storage / disks / shared files / ...
+  
+## Networking:
+### VPN gateways
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
+
+Connect on-premises datacenters to virtual networks through a site-to-site connection.
+Connect individual devices to virtual networks through a point-to-site connection.
+Connect virtual networks to other virtual networks through a network-to-network connection.
+All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network. However, you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
+
+When setting up a VPN gateway, you must specify the type of VPN - either policy-based or route-based. The primary distinction between these two types is how they determine which traffic needs encryption. In Azure, regardless of the VPN type, the method of authentication employed is a preshared key.
+
+Policy-based VPN gateways specify statically the IP address of packets that should be encrypted through each tunnel. This type of device evaluates every data packet against those sets of IP addresses to choose the tunnel where that packet is going to be sent through.
+In Route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface. IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices. They're more resilient to topology changes such as the creation of new subnets.
+Use a route-based VPN gateway if you need any of the following types of connectivity:
+
+Connections between virtual networks
+Point-to-site connections
+Multisite connections
+Coexistence with an Azure ExpressRoute gateway
 
 ### Azure Arc:   Secure, monitor, and govern infrastructure across your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views
 
@@ -68,7 +88,11 @@ It is a management layer that accepts requests from any Azure tool or API and en
 
 $\color{orange}{\text{         ..... Orange Text Here ........ }}$
 
-DIO Challenges:
+### Azure resource lock
+It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
+Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied. In the case of lock inherited from a resource group, you can move a specific resource to another resource group that doesn´t have a lock and so the lock will not apply anylonger. However, if the lock is set directly to a specific resource, even when moving to a another resource group, the lock will be moved alongside with the resource. Warning:::  it the lock is a read-only, it is not possible to move the resource at all.
+
+### DIO Challenges:
 
 https://github.com/alexandreborsato/lab-open-source.git/desafio.py
 https://github.com/alexandreborsato/lab-open-source.git/desafio1.py
@@ -146,15 +170,9 @@ It is a service in Azure that enables you to create, assign, and manage policies
 
 ### Application Insights is a feature of Azure Monitor that allows you to monitor running applications, automatically detect performance anomalies, and use built-in analytics tools to see what users do on an app
 
-### Azure resource lock
-It prevents resources from being accidentally deleted or changed. Review before locking and take care. It is possible to set the lock for read-only or for delete. When set for delete, the resource can be read, changed, moved,... but cannot be deleted. When set to read-only, it can only be read and just it.
-
-Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied. In the case of lock inherited from a resource group, you can move a specific resource to another resource group that doesn´t have a lock and so the lock will not apply anylonger. However, if the lock is set directly to a specific resource, even when moving to a another resource group, the lock will be moved alongside with the resource. Warning:::  it the lock is a read-only, it is not possible to move the resource at all.
-
 ### Support Plans:
 
 <img width="994" alt="image" src="https://github.com/user-attachments/assets/346a393c-7ae8-4fb9-8ce9-af3c32cd0498">
-
 
 
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/2920ee53-3169-42b5-b267-bb4c95ac5a98">
