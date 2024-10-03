@@ -11,6 +11,13 @@ Within the Resource Groups there are some features and configurations to be expl
  - Resources don't inherit the tags you apply to a resource group or a subscription
  - All resources within a resource group will inherit the permissions set in the former
 
+### Azure management groups
+The final piece is the management group. Resources are gathered into resource groups, and resource groups are gathered into subscriptions. If you’re just starting in Azure that might seem like enough hierarchy to keep things organized. But imagine if you’re dealing with multiple applications, multiple development teams, in multiple geographies.
+If you have many subscriptions, you might need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called management groups and apply governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group, the same way that resource groups inherit settings from subscriptions and resources inherit from resource groups. Management groups give you enterprise-grade management at a large scale, no matter what type of subscriptions you might have. Management groups can be nested.
+
+<img width="571" alt="image" src="https://github.com/user-attachments/assets/8057e12c-f2c6-4d1e-9482-413659a69515">
+
+
 ### Containers and VMs are isolated from host hardware
 
 ### Network peering - used to stablish communication between virtual networks (VNtes)
@@ -97,6 +104,9 @@ It can be used in environments that have multiple subscriptions to streamline th
 Use it to manage access, policies, and compliance across multiple subscriptions.
 
 ### Azure CLI::  https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest 
+
+$ az interactive - command to activate CLI - Azure CLI interactive mode. This changes CLI behavior to more closely resemble an integrated development environment (IDE). Interactive mode provides autocompletion, command descriptions, and even examples. If you’re unfamiliar with BASH and PowerShell, but want to use the command line, interactive mode may help you.
+    exit to exit the CLI interactive
 
 ### Microsoft Purview
 It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
