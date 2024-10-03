@@ -19,14 +19,7 @@ If you have many subscriptions, you might need a way to efficiently manage acces
 
 
 ### Containers and VMs are isolated from host hardware
-
-### Network peering - used to stablish communication between virtual networks (VNtes)
-
 ### Region Pairs:  allows you to replicate resources across a geography to ensure business continuity during a natural disaster at the primary site
-
-### Peering:  allow resources on two different Azure virtual networks to communicate with each other
-
-### Service Endipoints:  use it to connect Azure resources, such as Azure SQL databases, to an Azure virtual network
 
 ### Express Route
 It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
@@ -71,13 +64,25 @@ All data transfer is encrypted inside a private tunnel as it crosses the interne
 When setting up a VPN gateway, you must specify the type of VPN - either policy-based or route-based. The primary distinction between these two types is how they determine which traffic needs encryption. In Azure, regardless of the VPN type, the method of authentication employed is a preshared key.
 
 Policy-based VPN gateways specify statically the IP address of packets that should be encrypted through each tunnel. This type of device evaluates every data packet against those sets of IP addresses to choose the tunnel where that packet is going to be sent through.
-In Route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface. IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices. They're more resilient to topology changes such as the creation of new subnets.
-Use a route-based VPN gateway if you need any of the following types of connectivity:
+In Route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface. IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. 
+Route-based VPNs are the preferred connection method for on-premises devices. They're more resilient to topology changes such as the creation of new subnets.Use a route-based VPN gateway if you need any of the following types of connectivity:
 
-Connections between virtual networks
-Point-to-site connections
-Multisite connections
-Coexistence with an Azure ExpressRoute gateway
+ - Connections between virtual networks
+ - Point-to-site connections
+ - Multisite connections
+ - Coexistence with an Azure ExpressRoute gateway
+
+ - Review this exercise:
+https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access
+
+### Network peering - used to stablish communication between virtual networks (VNtes)
+
+### Peering:  allow resources on two different Azure virtual networks to communicate with each other
+
+### Service Endipoints:  use it to connect Azure resources, such as Azure SQL databases, to an Azure virtual network
+
+### Express Route
+It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
 
 ### Azure Arc:   Secure, monitor, and govern infrastructure across your environments, including on-premises, other public clouds, and edge devices. There's no charge to start, just add your infrastructure and enjoy the views
 
@@ -111,6 +116,7 @@ Azure Functions is an event-driven, serverless compute option that doesn’t req
 
 ### Azure Virtual Machines (VMs):
 Virtual machine workloads that are used only during certain periods, but you run them every hour of every day, then you are wasting money. These virtual machines are great candidates to deallocate when not in use and start back when required to save compute costs while the virtual machines are deallocated.
+ - Availability sets stagger VM updates based on their update and fault domains
 
 ### Azure Virtual Desktop
 Kind of workspace / virtual desktop - Easily scale your VM deployment. Create host pools to easily manage assignments, application groups, and settings for your entire organization
