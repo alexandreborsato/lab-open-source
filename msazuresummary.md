@@ -19,6 +19,9 @@ If you have many subscriptions, you might need a way to efficiently manage acces
 
 
 ### Containers and VMs are isolated from host hardware
+
+### Virtual Machine Scale Sets are an Azure compute resource that you can use to deploy and manage and scale a set of identical virtual machines.
+
 ### Region Pairs:  allows you to replicate resources across a geography to ensure business continuity during a natural disaster at the primary site
 
 ### Express Route
@@ -43,7 +46,7 @@ The Archive storage tier stores data offline and offers the lowest storage costs
 
 Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy 
 
- - Azure Files: it is a fully managed file shares in the cloud that are accessible via the industry-standard SMB and NFS protocols. Azure Files shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Azure Files shares can also be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
+ - Azure Files: it is a fully managed file shares in the cloud that are accessible via the industry-standard SMB and NFS protocols. These two protocols can be used to access Azure file shares. Azure Files shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Azure Files shares can also be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
 
  - AzCopy is a command-line utility designed for copying data to and from Microsoft Azure Blob, File, and Table storage. With AzCopy, you can migrate your data from the file system to Azure Storage, or vice versa, using simple commands and with optimal performance.
 
@@ -51,7 +54,7 @@ Review:  https://learn.microsoft.com/en-us/azure/storage/common/storage-redundan
 
  - Azure Storage Explorer - Upload, download, and manage Azure Storage blobs, files, queues, and tables, as well as Azure Data Lake Storage entities and Azure managed disks. Configure storage permissions and access controls, tiers, and rules.
      - Download it and use it, it is really a easier way to friendly work with you cloud storage / disks / shared files / ...
-  
+
 ## Networking:
 ### VPN gateways
 A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
