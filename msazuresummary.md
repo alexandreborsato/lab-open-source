@@ -39,8 +39,8 @@ It is the same as AWS Direct Connect - connect customers local enterprise networ
 
  - Blob Storage - block blob accounts: object storage :: kind of S3
       - Common use cases for Azure Blob storage:
-      - serving images or documents directly to a browser;
-      - storing data for backup and restore
+       - serving images or documents directly to a browser;
+       - storing data for backup and restore
 
 The Archive storage tier stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data. The Hot storage tier is optimized for storing data that is accessed frequently. Data in the Cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data.
 
@@ -79,10 +79,9 @@ Route-based VPNs are the preferred connection method for on-premises devices. Th
 https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/9-exercise-configure-network-access
 
 ### Network peering - used to stablish communication between virtual networks (VNtes)
+it allows resources on two different Azure virtual networks to communicate with each other
 
-### Peering:  allow resources on two different Azure virtual networks to communicate with each other
-
-### Service Endipoints:  use it to connect Azure resources, such as Azure SQL databases, to an Azure virtual network
+### Service Endpoints:  use it to connect Azure resources, such as Azure SQL databases, to an Azure virtual network
 
 ### Express Route
 It is the same as AWS Direct Connect - connect customers local enterprise network with MS Azure directly thru a private exclusive connection (physical connection)
