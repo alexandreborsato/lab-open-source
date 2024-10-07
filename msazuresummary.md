@@ -1,7 +1,7 @@
 # MS Azure Summary
 
 ### Resource Groups
-It is used to group resources as a project/ptogram or architecture, environment. Here you can create your cloud resources.
+It is used to group resources as a project/program or architecture, environment. Here you can create your cloud resources.
 The reources are VMs, DBs, virtual networks...
 Within the Resource Groups there are some features and configurations to be exploired such as Activity Log, IAM (permissions), Tags, Settings (Security, Policies, Locks), Cost Management, Monitoring, Automation....
  - A resource group can connect to resources in other resource groups. This scenario is common when two different resources are related but don't share the same lifecycle or access pattern. For example, you can have a web app that connects to a database in a different resource group.
